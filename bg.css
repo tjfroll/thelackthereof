@@ -1,0 +1,343 @@
+/* Design and code by Tim Froehlich
+   Last update: 7/3/2012 */
+
+#bg {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -10;
+}
+
+#bg .orange {position: fixed; background-color: #ff6600;}
+#bg .black {position: fixed; background-color: #111;}
+#bg .top {top: 0;}
+#bg .bottom{bottom: 0;}
+#bg .left {left: 0;}
+#bg .right {right: 0;}
+
+#bg .landA1 {
+	width: 70%;
+	height: 12%;
+	border-top-left-radius: 100%;
+	z-index: -3
+}
+#bg .landA2 {
+	width: 60%;
+	height: 10.5%;
+	border-top-left-radius: 100%;
+	z-index: -2
+}
+
+#bg .water {
+	width: 60%;
+	height: 9%;
+	z-index: -3;
+	border-top-right-radius: 50%;
+}
+
+#bg .fish1 {
+	width: 2.5%;
+	height: 4%;
+	left: 4%;
+	bottom: 9%;
+	z-index: -1;
+	border-top-left-radius: 100%;
+	border-bottom-right-radius: 100%;
+	border: 2px solid #111;
+}
+#bg .fish2 {
+	width: 1%;
+	height: 1.5%;
+	left: 3.7%;
+	bottom: 8.5%;
+	z-index: -1;
+	opacity: .8;
+	border-top-right-radius: 100%;
+	border-bottom-left-radius: 100%;
+	
+}
+#bg .fish3 {
+	width: .5%;
+	height: .5%;
+	left: 5.5%;
+	bottom: 12%;
+	z-index: 0;
+	opacity: .8;
+	border-radius: 100%;
+}
+#bg .fish4 {
+	width: .9%;
+	height: .5%;
+	left: 4.2%;
+	bottom: 6.8%;
+	z-index: -1;
+	opacity: .4;
+	border-radius: 100%;
+}
+#bg .fish5 {
+	width: .5%;
+	height: 1.3%;
+	left: 2.7%;
+	bottom: 8.2%;
+	z-index: -1;
+	opacity: .4;
+	border-top-right-radius: 100%;
+	border-bottom-left-radius: 100%;
+}
+
+#bg .eddy1, .eddy2, .eddy3, .eddy4, .eddy5 {
+	z-index: -2;
+	border-bottom: 10px solid #111;
+	border-bottom-left-radius: 100%;
+	border-bottom-right-radius: 100%;
+	opacity: .2;
+}
+#bg .eddy1 {
+	width: 7%;
+	height: 5%;
+	bottom: 2%;
+	left: -1.5%;
+}
+#bg .eddy2 {
+	width: 8%;
+	height: 7%;
+	bottom: -1%;
+	left: 7.5%;
+}
+#bg .eddy3 {
+	width: 6%;
+	height: 6%;
+	bottom: 2%;
+	left: 16%;
+}
+#bg .eddy4 {
+	width: 7%;
+	height: 3%;
+	bottom: 1%;
+	left: 25%;
+}
+#bg .eddy5 {
+	width: 4%;
+	height: 3%;
+	bottom: 4%;
+	left: 34%;
+}
+
+#bg .wave2, .wave3, .wave4, .wave5, .wave6, .wave7,
+.wave8, .wave9, .wave10, .wave11, .wave12, .wave13 {
+	width: 5.2%;
+	height: 6%;
+	z-index: -2;
+	border-radius: 100%;
+	border-bottom: 3px double #111;
+	bottom: 7%;
+}
+#bg .wave2 {left: -5.5%; width: 7.5%; height: 7%; bottom: 5.2%;}
+#bg .wave3 {left: 2%; width: 7%; height: 6.5%; bottom: 5.5%;}
+#bg .wave4 {left: 9%; width: 6.5%; bottom: 5.8%;}
+#bg .wave5 {left: 15.5%; width: 6%; bottom: 6.1%;}
+#bg .wave6 {left: 21.5%; width: 5.5%; bottom: 6.4%;}
+#bg .wave7 {left: 27%; bottom: 6.7%;}
+#bg .wave8 {left: 32%;}
+#bg .wave9 {left: 36.5%; bottom: 7.3%;}
+#bg .wave10 {left: 41%; bottom: 7.6%;}
+#bg .wave11 {left: 45%; bottom: 7.9%;}
+#bg .wave12 {left: 48.5%; bottom: 8.2%;}
+
+
+#bg .bigLWingA, .bigLWingB, .bigRWingA, .bigRWingB {
+	z-index: -4;
+	border-top-left-radius: 100%;
+	border-top-right-radius: 100%;
+}
+#bg .bigLWingA {
+	height: 10%;
+	width: 12%;
+	left: 3%;
+	top: 19%;
+	border-radius: 100%;
+}
+#bg  .bigLWingB {
+	height: 9.5%;
+	width: 13%;
+	left: 2.5%;
+	top: 20%;
+	z-index: -3;
+}
+#bg .bigRWingA {
+	height: 10%;
+	width: 12%;
+	left: 12.5%;
+	top: 19%;
+	border-radius: 100%;
+}
+#bg .bigRWingB {
+	height: 9.5%;
+	width: 13%;
+	left: 12%;
+	top: 20%;
+	z-index: -3;
+}
+
+#bg .lWingA, .lWingB, .rWingA, .rWingB {
+	width: 9%;
+	border-top-left-radius: 100%;
+	border-top-right-radius: 100%;
+	z-index: -4;
+}
+#bg .lWingA {
+	height: 10%;
+	left: 10%;
+	top: 7%;
+	border-radius: 100%;
+}
+#bg  .lWingB {
+	height: 9.1%;
+	left: 10%;
+	top: 8%;
+	z-index: -3;
+}
+#bg .rWingA {
+	height: 10%;
+	left: 18%;
+	top: 7%;
+	border-radius: 100%;
+}
+#bg .rWingB {
+	height: 9.1%;
+	left: 18%;
+	top: 8%;
+	z-index: -3;
+}
+
+#bg .bfly1 {
+	height: 2%;
+	width: 1.5%;
+	right: 1%;
+	bottom: 22%;
+	border-top-left-radius: 100%;
+	border-bottom-right-radius: 100%;
+	opacity: .8;
+	z-index: -3;
+}
+#bg .bfly2 {
+	height: 2%;
+	width: 1.5%;
+	right: 2.2%;
+	bottom: 22%;
+	opacity: .8;
+	border-top-right-radius: 100%;
+	border-bottom-left-radius: 100%;
+	z-index: -3;
+}
+#bg .bfly3 {
+	height: 1.5%;
+	width: .3%;
+	right: 2.2%;
+	bottom: 22%;
+	z-index: -3;
+}
+
+#bg .grass1a, .grass2a, .grass3a, .grass4a {
+	border-top: 5px double #111;
+	border-top-right-radius: 100%;
+	border-top-left-radius: 100%;
+	z-index: -4;
+}
+#bg .grass1b, .grass2b, .grass3b, .grass4b {
+	border-top-right-radius: 100%;
+	border-top-left-radius: 100%;
+	z-index: -4;
+}	
+#bg .grass1a {
+	width: 14.5%;
+	height: 32%;
+	left: 90.5%;
+	border-left: 5px double #111;
+}
+#bg .grass1b {
+	width: 13.5%;
+	height: 31.5%;
+	left: 92.5%;
+}
+#bg .grass2a {
+	width: 10%;
+	height: 22%;
+	left: 94%;
+	border-left: 5px double #111;
+}
+#bg .grass2b {
+	width: 9%;
+	height: 21%;
+	left: 95.5%;
+}
+#bg .grass3a {
+	width: 14.5%;
+	height: 27%;
+	left: 77%;
+	border-right: 5px double #111;
+}
+#bg .grass3b {
+	width: 13.5%;
+	height: 26.5%;
+	left: 76%;
+	border-right: 5px double #111;
+}
+#bg .grass4a {
+	width: 14.5%;
+	height: 18%;
+	left: 74%;
+}
+#bg .grass4b {
+	width: 13.5%;
+	height: 17.5%;
+	left: 73%;
+}
+
+#bg .sun1a, .sun1b, .sun2a, .sun2b, .sun3 {
+	border-bottom-left-radius: 100%;
+}
+
+#bg .sun1a {
+	width: 25%;
+	height: 25%;
+	z-index: -5;
+	opacity: .6;
+}
+#bg .sun1a1 {
+	width: 25%;
+	height: 40%;
+	z-index: -2;
+	right: 16.5%;
+	border-bottom-right-radius: 100%;
+}
+#bg .sun1a2 {
+	width: 40%;
+	height: 25%;
+	z-index: -2;
+	top: 16.5%;
+	border-top-left-radius: 100%;
+}
+#bg .sun1b {
+	width: 23%;
+	height: 23%;
+	z-index: -3;
+}
+#bg .sun2a {
+	width: 20%;
+	height: 20%;
+	z-index: -3;
+	opacity: .8;
+}
+#bg .sun2b {
+	width: 18%;
+	height: 18%;
+	z-index: -2;
+}
+#bg .sun3 {
+	width: 15%;
+	height: 15%;
+	z-index: -2;
+}
