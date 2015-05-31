@@ -15,48 +15,42 @@
     <script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
     <link rel="alternate" type="application/rss+xml" title="And the Lack Thereof » Feed" href="http://thelackthereof.com/wp/feed/">
     <link rel="alternate" type="application/rss+xml" title="And the Lack Thereof » Comments Feed" href="http://thelackthereof.com/wp/comments/feed/">
-    <link rel="stylesheet" id="twentyfifteen-style-css" href="../style.css" type="text/css" media="all">
 
-    <script type="text/javascript" src="../jquery.js"></script>
+    <link rel="stylesheet" id="thunderfunk-style" href="../css/bootstrap.min.css" type="text/css" media="all">
+    <link rel="stylesheet" id="thunderfunk-style" href="../css/c3.min.css" type="text/css" media="all">
+    <link rel="stylesheet" id="thunderfunk-style" href="../css/main.css" type="text/css" media="all">
+
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/velocity.min.js"></script>
+    <script type="text/javascript" src="../js/velocity-ui.min.js"></script>
+    <script type="text/javascript" src="../js/d3.min.js"></script>
+    <script type="text/javascript" src="../js/c3.min.js"></script>
+
     <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://thelackthereof.com/wp/xmlrpc.php?rsd">
     <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://thelackthereof.com/wp/wp-includes/wlwmanifest.xml"> 
   </head>
 
-  <body class="home blog logged-in admin-bar  customize-support" cz-shortcut-listen="true">
+  <body class="" cz-shortcut-listen="true">
     <div id="page" class="hfeed site">
       <a class="skip-link screen-reader-text" href="http://thelackthereof.com/wp/#content">Skip to content</a>
-
-      <div id="sidebar" class="sidebar" style="top: 0px;">
+      <header id="page-title" class="row site-header" role="banner">
+        <script type="text/javascript">$('#page-title').load('./title.html')</script>
+      </header>
+      <div id="sidebar" class="sidebar">
         <script type="text/javascript">$('#sidebar').load('./sidebar.html')</script>
       </div>
       <div id="content" class="site-content">
         <div id="primary" class="content-area">
           <main id="main" class="site-main" role="main">
-            <script type="text/javascript">$('#main').load('./main.html')</script>
+            <script type="text/javascript">$('#main').load('./posts_index.html')</script>
 
-            <nav class="navigation pagination" role="navigation">
-              <h2 class="screen-reader-text">Posts navigation</h2>
-              <div class="nav-links">
-                <span class="page-numbers current"><span class="meta-nav screen-reader-text">Page </span>1</span>
-                <a class="page-numbers" href="http://thelackthereof.com/wp/page/2/"><span class="meta-nav screen-reader-text">Page </span>2</a>
-                <span class="page-numbers dots">…</span>
-                <a class="page-numbers" href="http://thelackthereof.com/wp/page/26/"><span class="meta-nav screen-reader-text">Page </span>26</a>
-                <a class="next page-numbers" href="http://thelackthereof.com/wp/page/2/">Next page</a>
-              </div>
+            <nav id="post-nav-index" class="navigation pagination" role="navigation">
+              <script type="text/javascript">$('#post-nav-index').load('./posts_nav_index.html')</script>
             </nav>
           </main>
         </div>
       </div>
-    </div>
-
-    <script type="text/javascript" src="./index_files/admin-bar.min.js"></script>
-    <script type="text/javascript">
-      /* <![CDATA[ */
-      var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand child menu<\/span>","collapse":"<span class=\"screen-reader-text\">collapse child menu<\/span>"};
-      /* ]]> */
-    </script>
-    <div id="wpadminbar" class="">
-      <script type="text/javascript">$('#wpadminbar').load('./admin_bar.html')</script>
     </div>
   </body>
 </html>
