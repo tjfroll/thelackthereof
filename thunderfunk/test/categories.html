@@ -1,0 +1,52 @@
+
+                <h2 class="widget-title">categories</h2>
+                <label class="screen-reader-text" for="cat">categories</label>
+                <select name="cat" id="cat" class="postform">
+                  <option value="-1">Select Category</option>
+                  <option class="level-0" value="21">creativity&nbsp;&nbsp;(22)</option>
+                  <option class="level-1" value="43">&nbsp;&nbsp;&nbsp;art&nbsp;&nbsp;(5)</option>
+                  <option class="level-1" value="29">&nbsp;&nbsp;&nbsp;fiction&nbsp;&nbsp;(5)</option>
+                  <option class="level-0" value="37">life&nbsp;&nbsp;(567)</option>
+                  <option class="level-1" value="12">&nbsp;&nbsp;&nbsp;college&nbsp;&nbsp;(22)</option>
+                  <option class="level-1" value="38">&nbsp;&nbsp;&nbsp;correspondence&nbsp;&nbsp;(31)</option>
+                  <option class="level-1" value="5">&nbsp;&nbsp;&nbsp;high school&nbsp;&nbsp;(466)</option>
+                  <option class="level-1" value="67">&nbsp;&nbsp;&nbsp;love&nbsp;&nbsp;(6)</option>
+                  <option class="level-1" value="68">&nbsp;&nbsp;&nbsp;sex&nbsp;&nbsp;(4)</option>
+                  <option class="level-1" value="26">&nbsp;&nbsp;&nbsp;work&nbsp;&nbsp;(26)</option>
+                  <option class="level-0" value="90">media&nbsp;&nbsp;(169)</option>
+                  <option class="level-1" value="95">&nbsp;&nbsp;&nbsp;movies&nbsp;&nbsp;(20)</option>
+                  <option class="level-1" value="9">&nbsp;&nbsp;&nbsp;music&nbsp;&nbsp;(27)</option>
+                  <option class="level-1" value="94">&nbsp;&nbsp;&nbsp;photos&nbsp;&nbsp;(20)</option>
+                  <option class="level-1" value="91">&nbsp;&nbsp;&nbsp;television&nbsp;&nbsp;(11)</option>
+                  <option class="level-1" value="8">&nbsp;&nbsp;&nbsp;video games&nbsp;&nbsp;(103)</option>
+                  <option class="level-0" value="3">religion&nbsp;&nbsp;(84)</option>
+                  <option class="level-1" value="108">&nbsp;&nbsp;&nbsp;church&nbsp;&nbsp;(18)</option>
+                  <option class="level-1" value="84">&nbsp;&nbsp;&nbsp;faith&nbsp;&nbsp;(4)</option>
+                  <option class="level-1" value="6">&nbsp;&nbsp;&nbsp;fundamentalism&nbsp;&nbsp;(30)</option>
+                  <option class="level-1" value="31">&nbsp;&nbsp;&nbsp;theology&nbsp;&nbsp;(3)</option>
+                  <option class="level-0" value="4">science&nbsp;&nbsp;(18)</option>
+                  <option class="level-1" value="23">&nbsp;&nbsp;&nbsp;nature&nbsp;&nbsp;(3)</option>
+                  <option class="level-0" value="7">technology&nbsp;&nbsp;(54)</option>
+                  <option class="level-1" value="64">&nbsp;&nbsp;&nbsp;gadgets&nbsp;&nbsp;(3)</option>
+                  <option class="level-1" value="15">&nbsp;&nbsp;&nbsp;the internet&nbsp;&nbsp;(23)</option>
+                  <option class="level-0" value="13">theory&nbsp;&nbsp;(84)</option>
+                  <option class="level-1" value="30">&nbsp;&nbsp;&nbsp;culture&nbsp;&nbsp;(33)</option>
+                  <option class="level-1" value="86">&nbsp;&nbsp;&nbsp;morality&nbsp;&nbsp;(6)</option>
+                  <option class="level-1" value="14">&nbsp;&nbsp;&nbsp;philosophy&nbsp;&nbsp;(30)</option>
+                  <option class="level-1" value="22">&nbsp;&nbsp;&nbsp;politics&nbsp;&nbsp;(23)</option>
+                  <option class="level-0" value="17">web design&nbsp;&nbsp;(26)</option>
+                </select>
+
+                <script type="text/javascript">
+                /* <![CDATA[ */
+                (function() {
+                  var dropdown = document.getElementById( "cat" );
+                  function onCatChange() {
+                    if ( dropdown.options[ dropdown.selectedIndex ].value > 0 ) {
+                      location.href = "http://thelackthereof.com/wp/?cat=" + dropdown.options[ dropdown.selectedIndex ].value;
+                    }
+                  }
+                  dropdown.onchange = onCatChange;
+                })();
+                /* ]]> */
+                </script>
