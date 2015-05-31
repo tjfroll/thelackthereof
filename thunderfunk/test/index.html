@@ -31,24 +31,29 @@
     <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://thelackthereof.com/wp/wp-includes/wlwmanifest.xml"> 
   </head>
 
-  <body class="" cz-shortcut-listen="true">
-    <div id="page" class="hfeed site">
-      <a class="skip-link screen-reader-text" href="http://thelackthereof.com/wp/#content">Skip to content</a>
-      <header id="page-title" class="row site-header" role="banner">
-        <script type="text/javascript">$('#page-title').load('./title.html')</script>
-      </header>
-      <div id="sidebar" class="sidebar">
-        <script type="text/javascript">$('#sidebar').load('./sidebar.html')</script>
-      </div>
-      <div id="content" class="site-content">
-        <div id="primary" class="content-area">
-          <main id="main" class="site-main" role="main">
-            <script type="text/javascript">$('#main').load('./posts_index.html')</script>
+  <body cz-shortcut-listen="true">
+    <div id="page" class="hfeed site container-fluid">
+      <div class="col-md-12 col-lg-10 col-lg-offset-1">
+        <div class="row">
+          <header id="page-title" class="site-header col-md-12" role="banner">
+            <script type="text/javascript">$('#page-title').load('./title.html')</script>
+          </header>
+          <div id="sidebar" class="sidebar col-sm-12 col-md-3 col-lg-2">
+            <script type="text/javascript">$('#sidebar').load('./sidebar.html')</script>
+          </div>
+        </div>
+        <div class="row">
+          <div id="content" class="site-content col-sm-12 col-md-9 col-lg-10">
+            <div id="primary" class="content-area">
+              <main id="main" class="site-main" role="main">
+                <script type="text/javascript">$('#main').load('./posts_index.html')</script>
 
-            <nav id="post-nav-index" class="navigation pagination" role="navigation">
-              <script type="text/javascript">$('#post-nav-index').load('./posts_nav_index.html')</script>
-            </nav>
-          </main>
+                <nav id="post-nav-index" class="navigation pagination" role="navigation">
+                  <script type="text/javascript">$('#post-nav-index').load('./posts_nav_index.html')</script>
+                </nav>
+              </main>
+            </div>
+          </div>
         </div>
       </div>
     </div>
