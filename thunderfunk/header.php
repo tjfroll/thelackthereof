@@ -10,23 +10,34 @@
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
-<head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<!--[if lt IE 9]>
-	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
-	<![endif]-->
-	<?php wp_head(); ?>
-</head>
+	<head>
+		<meta charset="<?php bloginfo( 'charset' ); ?>">
+		<meta name="viewport" content="width=device-width">
+		<link rel="profile" href="http://gmpg.org/xfn/11">
+		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-<body <?php body_class(); ?>>
-	<div id="page" class="hfeed site container-fluid">
-		<!--<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyfifteen' ); ?></a>-->
+	  <link rel="stylesheet" id="thunderfunk-style" href="./wp-content/themes/thunderfunk/css/bootstrap.min.css" type="text/css" media="all">
+	  <link rel="stylesheet" id="thunderfunk-style" href="./wp-content/themes/thunderfunk/css/c3.min.css" type="text/css" media="all">
+	  <link rel="stylesheet" id="thunderfunk-style" href="./wp-content/themes/thunderfunk/css/main.css" type="text/css" media="all">
 
-		<div class="row">
-			<header id="header" class="site-header col-md-12" role="banner">
+	  <script type="text/javascript" src="./wp-content/themes/thunderfunk/js/jquery.js"></script>
+	  <script type="text/javascript" src="./wp-content/themes/thunderfunk/js/bootstrap.min.js"></script>
+	  <script type="text/javascript" src="./wp-content/themes/thunderfunk/js/velocity.min.js"></script>
+	  <script type="text/javascript" src="./wp-content/themes/thunderfunk/js/velocity-ui.min.js"></script>
+	  <script type="text/javascript" src="./wp-content/themes/thunderfunk/js/d3.min.js"></script>
+	  <script type="text/javascript" src="./wp-content/themes/thunderfunk/js/c3.min.js"></script>
+	  <script type="text/javascript" src="./wp-content/themes/thunderfunk/js/stats.js"></script>
+		<!--[if lt IE 9]>
+		<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
+		<![endif]-->
+		<?php wp_head(); ?>
+	</head>
+
+	<body <?php body_class(); ?>>
+		<div id="page" class="hfeed site">
+			<!--<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyfifteen' ); ?></a>-->
+
+			<header id="header" class="site-header" role="banner">
 				<div class="site-branding">
 					<?php
 						if ( is_front_page() && is_home() ) : ?>
@@ -43,8 +54,3 @@
 					<!--<button class="secondary-toggle"><?php _e( 'Menu and widgets', 'twentyfifteen' ); ?></button>-->
 				</div><!-- .site-branding -->
 			</header><!-- .site-header -->
-
-			<div id="sidebar" class="sidebar col-sm-12 col-md-3 col-lg-2">
-				<?php get_sidebar(); ?>
-			</div>
-		</div>

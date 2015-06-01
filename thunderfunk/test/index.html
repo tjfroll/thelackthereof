@@ -33,17 +33,14 @@
 
   <body cz-shortcut-listen="true">
     <div id="page" class="hfeed site container-fluid">
-      <div class="col-md-12 col-lg-10 col-lg-offset-1">
+      <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
         <div class="row">
           <header id="page-title" class="site-header col-md-12" role="banner">
             <script type="text/javascript">$('#page-title').load('./title.html')</script>
           </header>
-          <div id="sidebar" class="sidebar col-sm-12 col-md-3 col-lg-2">
-            <script type="text/javascript">$('#sidebar').load('./sidebar.html')</script>
-          </div>
         </div>
         <div class="row">
-          <div id="content" class="site-content col-sm-12 col-md-9 col-lg-10">
+          <div id="content" class="site-content col-md-12">
             <div id="primary" class="content-area">
               <main id="main" class="site-main" role="main">
                 <script type="text/javascript">$('#main').load('./posts_index.html')</script>
@@ -53,6 +50,11 @@
                 </nav>
               </main>
             </div>
+          </div>
+        </div>
+        <div class="row">
+          <div id="sidebar" class="sidebar col-md-12">
+            <script type="text/javascript">$('#sidebar').load('./sidebar.html')</script>
           </div>
         </div>
       </div>
